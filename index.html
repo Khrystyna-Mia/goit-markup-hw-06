@@ -50,7 +50,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Эффективные решения <br/>для вашего бизнеса</h1>
-            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+            <button class="button hero-button" type="button" data-modal-open>Заказать услугу</button>
 
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
@@ -60,23 +60,35 @@
                         </svg>
                     </button>
 
-                    <form>
-                        <p>Оставьте свои данные, мы вам перезвоним</p>
-                        <label for="name">Имя</label>
-                        <input type="text" name="username" id="name" placeholder=""/>
-                        
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel" placeholder=""/>
-                        
-                        <label for="email">Почта</label>
-                        <input type="email" name="email" id="email" placeholder=""/>
-                        
-                        <label for="comment">Комментарий</label>
-                        <textarea name="comment" rows="10" id="comment" placeholder="Введите текст"></textarea>
+                    <form class="form signup-form">
+                        <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+                        <div class="inputs">
+                        <div class="form-group">
+                        <label class="form-label" for="name">Имя</label>
+                        <input class="form-input" type="text" name="name" id="name"/>
+                        </div>
 
+                        <div class="form-group">
+                        <label class="form-label" for="tel">Телефон</label>
+                        <input class="form-input" type="tel" name="tel" id="tel"/>
+                        </div>
+
+                        <div class="form-group">
+                        <label class="form-label" for="email">Почта</label>
+                        <input class="form-input" type="email" name="email" id="email"/>
+                        </div>
+
+                        <div class="form-group">
+                        <label class="form-input" class="form-label" for="comment">Комментарий</label>
+                        <textarea name="comment" rows="10" id="comment" placeholder="Введите текст"></textarea>
+                        </div>
+
+                        <div class="form-group">
                         <input type="checkbox" name="privacy" value="privacy" id="privacy">
-                        <label for="privacy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                        <button type="submit">Отправить</button>
+                        <label class="form-input" class="form-label" for="privacy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                        </div>
+                        </div>
+                        <button class="button form-button" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>

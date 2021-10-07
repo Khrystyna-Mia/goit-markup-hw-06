@@ -13,6 +13,8 @@
   --secondary-icon: #2196f3;
   --third-icon: #ffffff;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  /* color button */
+  --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* HTML box */
@@ -66,6 +68,19 @@ img {
 
 .hide {
   display: none;
+}
+
+/* Button hero modal*/
+.button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 
 /* Header */
@@ -209,35 +224,28 @@ img {
   margin-bottom: 30px;
 }
 
-/* Button */
+/* Hero button */
 .hero-button {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-
   display: block;
-  cursor: pointer;
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 32px;
   min-width: 200px;
   border-color: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--button-shadow);
 
   transition: background-color 250ms var(--transition-timing),
     box-shadow 250ms var(--transition-timing);
 }
 
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.form-button:hover,
+.form-button:focus {
   border-radius: 4px;
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--button-shadow);
 }
 
 /* Backdrop Modal */
@@ -265,7 +273,8 @@ img {
 }
 
 .modal {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -298,6 +307,43 @@ img {
 }
 
 /* Modal window */
+.form-text {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+.inputs {
+  max-width: 448px;
+  min-height: 342px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-button {
+  align-items: center;
+  border-radius: 4px;
+  margin-right: auto;
+  /* margin-bottom: 40px; */
+  margin-left: auto;
+  padding: 10px 55px;
+  min-width: 200px;
+  border-color: transparent;
+  box-shadow: var(--button-shadow);
+
+  transition: background-color 250ms var(--transition-timing),
+    box-shadow 250ms var(--transition-timing);
+}
 
 /* Features */
 .features {
