@@ -88,7 +88,7 @@
                         <label class="form-input" class="form-label" for="privacy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
                         </div>
                         </div>
-                        <button class="button form-button" type="submit">Отправить</button>
+                        <button class="button form-btn" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -436,15 +436,18 @@
         </ul>
         </div>
 
-        <form>
-            <p>подпишитесь на рассылку</p>
-            <input type="email" name="email" placeholder="E-mail"/>
-            <button type="submit">Подписаться</button>
-
+        <form class="form-subscription" autocomplete="on" novalidate>
+            <div class="footer-form">
+                <p class="subscription-title">подпишитесь на рассылку</p>
+                <label class="hide" for="email">E-mail</label>
+                <input class="email-input" type="email" name="email" id="email" placeholder="E-mail" />
+                <button class="button btn-subscription" type="submit">Подписаться
+                    <svg class="button-icon" width="24" height="24" >
+                        <use href="./images/sprite.svg#send"></use>
+                    </svg>
+                </button>
+            </div>
         </form>
-
-
-
 
         </div>
     </footer>
