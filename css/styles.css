@@ -306,7 +306,7 @@ img {
   box-sizing: border-box;
 }
 
-/* Modal window */
+/* Form modal */
 .form-text {
   color: var(--title-color);
   font-weight: 700;
@@ -317,7 +317,7 @@ img {
   margin-top: 40px;
 }
 
-.inputs {
+.form {
   max-width: 448px;
   min-height: 342px;
   margin-right: auto;
@@ -325,8 +325,10 @@ img {
 }
 
 .form-group {
+  outline: 1px solid red;
   display: flex;
   flex-direction: column;
+  text-align: left;
   margin-bottom: 10px;
 }
 
