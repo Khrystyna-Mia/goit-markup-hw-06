@@ -331,6 +331,10 @@ img {
   margin-bottom: 28px;
 }
 
+.form-group:last-of-type {
+  margin-bottom: 20px;
+}
+
 .form-group label {
   position: absolute;
   top: -18px;
@@ -358,6 +362,7 @@ textarea {
 input {
   height: 40px;
   margin: 0;
+  padding: 0px 0px 0px 42px;
 }
 
 .icon {
@@ -400,10 +405,11 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* height: 24px; */
   margin-bottom: 30px;
 }
 
-.checkbox {
+.input-checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -424,13 +430,15 @@ textarea {
 }
 
 .checkbox:checked + .icon-checkbox {
-  background-image: url('../images/check-mark.svg');
+  background-image: url('../images/check.svg');
   background-color: var(--secondary-icon);
   background-size: contain;
   background-origin: border-box;
   border-radius: 2px;
   border-color: var(--secondary-icon);
-  /* fill: var(--secondary-icon); */
+  fill: var(--secondary-icon);
+
+  transition: fill 250ms var(--transition-timing), background-color 250ms var(--transition-timing);
 }
 
 .checkbox-link {
@@ -443,10 +451,10 @@ textarea {
   align-items: center;
   border-radius: 4px;
   margin-right: auto;
-  /* margin-bottom: 40px; */
   margin-left: auto;
   padding: 10px 55px;
   min-width: 200px;
+  border: none;
   border-color: transparent;
   box-shadow: var(--button-shadow);
 
