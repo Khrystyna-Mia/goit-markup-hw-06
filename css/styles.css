@@ -527,7 +527,7 @@ textarea {
   padding-left: 0;
 }
 
-.work-list > .work-thumb + .work-thumb {
+.work-list > .work-item + .work-item {
   margin-left: 30px;
 }
 
