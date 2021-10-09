@@ -304,6 +304,14 @@ img {
   border-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  background-color: var(--third-icon);
+
+  transition: fill 250ms var(--transition-timing);
+}
+
+.close-button:hover,
+.close-button:focus {
+  fill: var(--secondary-icon);
 }
 
 /* Form modal */
@@ -400,7 +408,6 @@ textarea {
   resize: none;
 }
 
-/* checkbox */
 .label-checkbox {
   display: flex;
   justify-content: center;
@@ -420,7 +427,7 @@ textarea {
   overflow: hidden;
 }
 
-.icon-checkbox {
+.check_box {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -429,16 +436,14 @@ textarea {
   border-radius: 2px;
 }
 
-.checkbox:checked + .icon-checkbox {
-  background-image: url('../images/check.svg');
-  background-color: var(--secondary-icon);
+.input-checkbox:checked + .check_box {
+  background-image: url('../images/check-mark.svg');
+  background-color: #2196f3;
   background-size: contain;
   background-origin: border-box;
-  border-radius: 2px;
-  border-color: var(--secondary-icon);
-  fill: var(--secondary-icon);
+  border-color: #2196f3;
 
-  transition: fill 250ms var(--transition-timing), background-color 250ms var(--transition-timing);
+  transition: background-color 250ms var(--transition-timing);
 }
 
 .checkbox-link {
