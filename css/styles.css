@@ -364,7 +364,8 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   cursor: pointer;
 
-  transition: fill 250ms var(--transition-timing), border-color 250ms var(--transition-timing);
+  transition: fill 250ms var(--transition-timing), border-color 250ms var(--transition-timing),
+    outline 250ms var(--transition-timing);
 }
 
 input {
@@ -380,11 +381,19 @@ input {
   transition: fill 250ms var(--transition-timing);
 }
 
+/* input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border-color: var(--secondary-icon);
+} */
+
 input:hover,
 input:focus,
 textarea:hover,
 textarea:focus {
   border-color: var(--secondary-icon);
+  outline: var(--secondary-icon);
 }
 
 input:hover ~ .icon,
